@@ -13,6 +13,10 @@
 - [使用文档](./doc/use/README.md)
 - [二次开发文档](./doc/dev/README.md)
 
+下载安装
+
+- 下载地址  https://github.com/date-convert/date-convert/releases
+
 使用示例
 
 - [示例](./example/test.html)
