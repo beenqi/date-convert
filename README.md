@@ -16,6 +16,8 @@
 下载安装
 
 - 下载地址  https://github.com/date-convert/date-convert/releases
+- npm 安装 npm i date-convert-npm
+- CDN http://unpkg.com/date-convert-npm/release/bundle.js
 
 使用示例
 
@@ -23,7 +25,7 @@
 
 js文件目录
 
-- [示例](./release/bundle.js)
+- [js文件](./release/bundle.js)
 
 ##交流 & 提问
 
