@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "release": "webpack"
+    "release": "webpack",
+    "example":  "http-server -p 8888"
   },
   "repository": {
     "type": "git",
