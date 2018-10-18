@@ -1,5 +1,10 @@
 # 使用文档
 
+##引用js文件
+
+```js
+release/bundle.js
+```
 ##初始化
 
 ```js
