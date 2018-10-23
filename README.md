@@ -1,4 +1,5 @@
-﻿# date-convert
+﻿
+# date-convert
 
 一个将标准日期或时间戳转换为‘年月日+时分秒+星期’日期格式的前端小工具
 
@@ -18,7 +19,7 @@
 - 下载地址  https://github.com/date-convert/date-convert/releases
 - npm 安装 npm i date-convert-npm
 - CDN http://unpkg.com/date-convert-npm/release/bundle.js
-
+- 官网 https://date-convert.github.io
 使用示例
 
 - [示例](./example/test.html)
