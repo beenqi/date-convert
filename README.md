@@ -19,7 +19,8 @@
 - 下载地址  https://github.com/date-convert/date-convert/releases
 - npm 安装 npm i date-convert-npm
 - CDN http://unpkg.com/date-convert-npm/release/bundle.js
-- 官网 https://date-convert.github.io
+- 官网 https://date-convert.github.io  
+
 使用示例
 
 - [示例](./example/test.html)
