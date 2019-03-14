@@ -48,7 +48,7 @@ class dateConvert {
 			return format; 
 		}
 	}
-	convert(value,format){
+	convert(value,format='y-m-d h:m:s'){
 		if(format == 'y-m-d h:m:s'){
 			var myDate= new Date(value).Format("yyyy-MM-dd hh:mm:ss");
 			return myDate;
@@ -59,6 +59,24 @@ class dateConvert {
 			var myDate= new Date(value).Format(format);
 			return myDate;
 		}
+	}
+	getAppointDate(status,num=1,format){
+		var nowdate = new Date();
+		var formatmdate = this.convert(nowdate,format);
+		if(status=='w'){
+					var oneweekdate = new Date(nowdate-7*24*3600*1000*num);
+	        formatmdate = this.convert(oneweekdate,format)
+	
+		}else if(status=='m'){
+					nowdate.setMonth(nowdate.getMonth()-num);
+	        formatmdate = this.convert(nowdate,format)
+		}else if(status=='y'){
+					nowdate.setYear(nowdate.getFullYear()-num);
+	        formatmdate = this.convert(nowdate,format)
+		}
+		
+		
+	  return formatmdate
 	}
 }
 window.dateConvert = dateConvert

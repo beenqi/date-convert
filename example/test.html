@@ -16,6 +16,10 @@
 			let DC = window.dateConvert;
 			//	实例化
 			let dateFun = new DC()
+			
+			//1、	 时间转换
+			//	方法: dateFun.convert(date, format);  
+			//date 代表要转换的时间，format是要得到转换后的日期格式
 			//	常用方法的简写
 			let dateVal1 = dateFun.convert(new Date(), 'y-m-d');
 			let dateVal2 = dateFun.convert(new Date(), 'y-m-d h:m:s');
@@ -23,7 +27,7 @@
 			let dateVal3 = dateFun.convert(1323122444323, 'yyyy-MM-dd hh:mm:ss w');
 			let dateVal4 = dateFun.convert(new Date(), 'yyyy-MM-dd hh:mm:ss w');
 			let dateVal5 = dateFun.convert(new Date(), 'yyyy-MM-dd hh:mm:ss');
-			let dateVal6 = dateFun.convert(new Date(), 'yyyy-MM-dd');
+			let dateVal6 = dateFun.convert(new Date(), 'yyyy/MM/dd'); //支持不同的连接符
 			//	输出
 			document.write(dateVal1)
 			document.write('<br>')
@@ -37,6 +41,25 @@
 			document.write('<br>')
 			document.write(dateVal6)
 			
+			//2、获取一定时间段前的日期
+			//方法: dateFun.getAppointDate(type, num，format);  
+			//			type 代表单位 ’w‘ 代表周；’m‘代表月；’y‘ 代表年
+			//			num是一个正整数 默认1
+			//			format 是需要获得的时间格式 同 convert方法中format参数 ,默认精确到秒
+			//如传入（’y‘，2）表示获取两年前的时间
+			//	例子
+			//获取2周前的时间
+			let dateVal7 = dateFun.getAppointDate('w',2);
+			//获取3个月前的时间
+			let dateVal8 = dateFun.getAppointDate('m',3,'yyyy-MM-dd hh:mm');
+			//获取5年前的时间
+			let dateVal9 = dateFun.getAppointDate('y',5);
+			document.write('<br>')
+			document.write('2周前的时间： ' + dateVal7)
+			document.write('<br>')
+			document.write('3个月前的时间： ' + dateVal8)
+			document.write('<br>')
+			document.write('获取5年前的时间： ' + dateVal9)
 		</script>
 	</body>
 
