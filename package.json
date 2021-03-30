@@ -1,6 +1,6 @@
 {
   "name": "date-convert-npm",
-  "version": "0.0.2",
+  "version": "0.1.1",
   "description": "时间戳转年月日时间前端小工具",
   "main": "src/index.js",
   "scripts": {

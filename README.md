@@ -33,7 +33,3 @@ js文件目录
 
 https://github.com/date-convert/date-convert/issues
 
-## 关于作者
-
-一个IT新人（been）
-欢迎各位大神贡献代码^_^ 

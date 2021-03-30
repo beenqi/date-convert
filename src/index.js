@@ -48,6 +48,7 @@ class dateConvert {
 			return format; 
 		}
 	}
+	
 	convert(value,format='y-m-d h:m:s'){
 		if(format == 'y-m-d h:m:s'){
 			var myDate= new Date(value).Format("yyyy-MM-dd hh:mm:ss");
@@ -60,6 +61,7 @@ class dateConvert {
 			return myDate;
 		}
 	}
+	
 	getAppointDate(status,num=1,format){
 		var nowdate = new Date();
 		var formatmdate = this.convert(nowdate,format);
@@ -79,4 +81,4 @@ class dateConvert {
 	  return formatmdate
 	}
 }
-window.dateConvert = dateConvert
+window.dateConvert = dateConvert;
